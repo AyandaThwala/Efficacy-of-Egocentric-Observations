@@ -240,5 +240,10 @@ class Agent(object):
     def update_target_network(self):
         self.target_q_func.load_state_dict(self.q_func.state_dict())
 
-    def save(self):
-        save(self.path, self)
+    def save(self, best=False):
+
+        if not best:
+            save(self.path, self)
+        else:
+            path = self.path+"_best"
+            save(path, self)
