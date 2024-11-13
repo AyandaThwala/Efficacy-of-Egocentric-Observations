@@ -1,10 +1,10 @@
-# Honours-Research
+# Egocentric vs Allocentric in MiniGrid
 
 ```bash
-conda create -n honours-research -c conda-forge python=3.7
+conda create -n comparitive-study -c conda-forge python=3.7
 ```
 ```bash
-conda activate honours-research
+conda activate comparitive-study
 ```
 ```bash
 pip install setuptools==65.5.0 pip==21
