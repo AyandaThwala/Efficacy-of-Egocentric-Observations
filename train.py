@@ -191,9 +191,9 @@ def train(env,
 if __name__ == '__main__':    
 
     # Set these for the experiment you want to conduct
-    n=1                                                        #       run number
-    d="t"                                                       #       t=test  e=easy  m=middle_child  h=hard
-    c="Navi"                                                #       characteristic being tested:    Obstacle(avoidance), Navi(gation), Task(completion)
+    n=1                                                    #       run number
+    d="t"                                                  #       t=test  e=easy  m=middle_child  h=hard
+    c="Navi"                                               #       characteristic being tested:    Obstacle(avoidance), Navi(gation), Task(completion)
     egocentric = False
     env_key="MiniGrid-LavaCrossingS9N3-v0"                 #       https://github.com/rohitrango/gym-minigrid          (choose your favourite environment)
     
