@@ -1,4 +1,5 @@
-# Exploring the Efficacy of Egocentric Observations in Reinforcement Learning Across Various Tasks
+# Exploring the Efficacy of Egocentric Observations 
+# in Reinforcement Learning Across Various Tasks
 
 ```bash
 conda create -n comparative-study -c conda-forge python=3.7
