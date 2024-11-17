@@ -192,18 +192,17 @@ if __name__ == '__main__':
 
     # Set these for the experiment you want to conduct
     n=1                                                    #       run number
-    d="t"                                                  #       t=test  e=easy  m=middle_child  h=hard
+    d="h"                                                  #       t=test  e=easy  m=middle_child  h=hard
     c="Navi"                                               #       characteristic being tested:    Obstacle(avoidance), Navi(gation), Task(completion)
-    egocentric = False
-    env_key="MiniGrid-LavaCrossingS9N3-v0"                 #       https://github.com/rohitrango/gym-minigrid          (choose your favourite environment)
+    egocentric = True
+    env_key="MiniGrid-SimpleCrossingS9N3-v0"                 #       https://github.com/rohitrango/gym-minigrid          (choose your favourite environment)
     
     if egocentric:
         name = "Egocentric"
-        name=f"{name}_{d}{c}_{n}"
     else:
         name = "Allocentric"
-        name=f"{name}_{d}Obstacle_{n}"
-    
+        
+    name=f"{name}_{d}{c}_{n}"
     env = gym.make(env_key) 
     env = FullyObsWrapper(env, egocentric=egocentric) 
     env = RGBImgObsWrapper(env)

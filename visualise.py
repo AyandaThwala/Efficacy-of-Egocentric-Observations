@@ -15,7 +15,7 @@ def visualise(egocentric, domain, env_key, max_episodes=2, max_trajectory=50):
     env_key=env_key                     #       https://github.com/rohitrango/gym-minigrid          (choose your favourite environment)
     max_episodes = max_episodes
     max_trajectory = max_trajectory
-    x = (1, 2)  
+    x = (1, 3)  
 
     if egocentric:
         modality = "Egocentric"
@@ -95,8 +95,8 @@ def fig_image(fig):
 
 if __name__ == '__main__':
 
-    visualise(egocentric=True, domain="Navi", env_key="MiniGrid-SimpleCrossingS9N3-v0")
-    visualise(egocentric=False, domain="Navi", env_key="MiniGrid-SimpleCrossingS9N3-v0")
+    # visualise(egocentric=True, domain="Navi", env_key="MiniGrid-SimpleCrossingS9N3-v0")
+    # visualise(egocentric=False, domain="Navi", env_key="MiniGrid-SimpleCrossingS9N3-v0")
 
     visualise(egocentric=True, domain="Obstacle", env_key="MiniGrid-Dynamic-Obstacles-8x8-v0")
     visualise(egocentric=False, domain="Obstacle", env_key="MiniGrid-Dynamic-Obstacles-8x8-v0")
