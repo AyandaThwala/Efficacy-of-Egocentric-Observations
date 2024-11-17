@@ -83,13 +83,13 @@ algorithms_obs = [
         'file_pattern': "CSV_files/ego_obs_avg_return/Egocentric_hObstacle_{}_evaluate_returns.csv",
         'label': 'Egocentric',
         'color': 'blue',
-        'num_runs': 5
+        'num_runs': 2   # 5 for full experiment
     },
     {
         'file_pattern': "CSV_files/allo_obs_avg_return/Allocentric_hObstacle_{}_evaluate_returns.csv",
         'label': 'Allocentric',
         'color': 'red',
-        'num_runs': 5
+        'num_runs': 2   # 5 for full experiment
     }
 ]
 fig, ax = plot_training_curves(
@@ -105,13 +105,13 @@ success_algorithms_obs = [
         'file_pattern': "CSV_files/ego_obs_success_rate/Egocentric_hObstacle_{}_evaluate_successes.csv",
         'label': 'Egocentric',
         'color': 'blue',
-        'num_runs': 5
+        'num_runs': 2   # 5 for full experiment
     },
     {
         'file_pattern': "CSV_files/allo_obs_success_rate/Allocentric_hObstacle_{}_evaluate_successes.csv",
         'label': 'Allocentric',
         'color': 'red',
-        'num_runs': 5
+        'num_runs': 2   # 5 for full experiment
     }
 ]
 fig2, ax2 = plot_training_curves(
@@ -127,13 +127,13 @@ algorithms_nav = [
         'file_pattern': "CSV_files/ego_nav_avg_return/Egocentric_hNavi_{}_evaluate_returns.csv",
         'label': 'Egocentric',
         'color': 'blue',
-        'num_runs': 5
+        'num_runs': 2   # 5 for full experiment
     },
     {
         'file_pattern': "CSV_files/allo_nav_avg_return/Allocentric_hNavi_{}_evaluate_returns.csv",
         'label': 'Allocentric',
         'color': 'red',
-        'num_runs': 4
+        'num_runs': 2   # 5 for full experiment
     }
 ]
 
@@ -150,13 +150,13 @@ success_algorithms_nav = [
         'file_pattern': "CSV_files/ego_nav_success_rate/Egocentric_hNavi_{}_evaluate_successes.csv",
         'label': 'Egocentric',
         'color': 'blue',
-        'num_runs': 5
+        'num_runs': 2   # 5 for full experiment
     },
     {
         'file_pattern': "CSV_files/allo_nav_success_rate/Allocentric_hNavi_{}_evaluate_successes.csv",
         'label': 'Allocentric',
         'color': 'red',
-        'num_runs': 4
+        'num_runs': 2   # 5 for full experiment
     }
 ]
 
@@ -173,13 +173,13 @@ algorithms_nav = [
         'file_pattern': "CSV_files/ego_tas_avg_return/Egocentric_hTask_{}_evaluate_returns.csv",
         'label': 'Egocentric',
         'color': 'blue',
-        'num_runs': 4
+        'num_runs': 2   # 5 for full experiment
     },
     {
         'file_pattern': "CSV_files/allo_tas_avg_return/Allocentric_hTask_{}_evaluate_returns.csv",
         'label': 'Allocentric',
         'color': 'red',
-        'num_runs': 4
+        'num_runs': 2   # 5 for full experiment
     }
 ]
 
@@ -196,13 +196,13 @@ success_algorithms_nav = [
         'file_pattern': "CSV_files/ego_tas_success_rate/Egocentric_hTask_{}_evaluate_successes.csv",
         'label': 'Egocentric',
         'color': 'blue',
-        'num_runs': 4
+        'num_runs': 2   # 5 for full experiment
     },
     {
         'file_pattern': "CSV_files/allo_tas_success_rate/Allocentric_hTask_{}_evaluate_successes.csv",
         'label': 'Allocentric',
         'color': 'red',
-        'num_runs': 4
+        'num_runs': 2   # 5 for full experiment
     }
 ]
 
